@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://chendinghao.github.io/2017/02/28/在hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="Chen">
 <meta property="og:description" content="心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。">
-<meta property="og:updated_time" content="2017-03-01T14:38:04.681Z">
+<meta property="og:updated_time" content="2017-03-01T14:43:29.112Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在hexo搭建个人博客">
 <meta name="twitter:description" content="心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。">
@@ -365,14 +365,14 @@
 <h1 id="首先是环境配置"><a href="#首先是环境配置" class="headerlink" title="首先是环境配置"></a>首先是环境配置</h1><pre><code>１、安装NODE
     安装NODE需要npm。而怎么安装npm呢？ 可以百度、geogle，这里就不在赘述。
 ２、安装git
-    可以 &apos;sudo apt-get install git&apos;
+    可以 `sudo apt-get install git`
 ３、申请github
     这个没什么好说的
 </code></pre><h1 id="接下来就是安装hexo了"><a href="#接下来就是安装hexo了" class="headerlink" title="接下来就是安装hexo了"></a>接下来就是安装hexo了</h1><pre><code>可以使用以下命令：    
-&apos;sudo npm install hexo -g&apos;
-</code></pre><h1 id="接下来，进入博客所在的目录"><a href="#接下来，进入博客所在的目录" class="headerlink" title="接下来，进入博客所在的目录"></a>接下来，进入博客所在的目录</h1><pre><code>&apos;hexo init&apos;
-&apos;hexo generate&apos;
-然后 &apos;hexo server&apos;
+`sudo npm install hexo -g`
+</code></pre><h1 id="接下来，进入博客所在的目录"><a href="#接下来，进入博客所在的目录" class="headerlink" title="接下来，进入博客所在的目录"></a>接下来，进入博客所在的目录</h1><pre><code>`hexo init`
+`hexo generate`
+然后 `hexo server`
 最后一步是启动本地服务，进行文章预览调试：浏览器中输入 (http://localhost:4000)
 </code></pre><h1 id="下一步，配置github"><a href="#下一步，配置github" class="headerlink" title="下一步，配置github"></a>下一步，配置github</h1><pre><code>(1)建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法 然后建立关联
 (2)修改_congif.yml文件
@@ -382,7 +382,7 @@
 <pre><code>        (ps.上面的repository后面，如果像上文一样，则以后每一次更新文章的时候，都要输入
         github的账号密码，让人很不爽。怎么办呢？你也可以用ssh，这样就不用每次都输入密码啦。具体请百度)
     (3)执行下面的命令部署git
-npm install hexo-deploy-git --save
+`npm install hexo-deploy-git --save`
     (4)再来一个hexo deploy
 到这里就完成了啊，就搭建好了一个简单的博客。当然，在这里只写到了比较理想化的情况，自己弄得时候要折腾多久之后自己去干了之后才会知道。后文附上我自己做的时候遇到的坑吧。。
 </code></pre>
