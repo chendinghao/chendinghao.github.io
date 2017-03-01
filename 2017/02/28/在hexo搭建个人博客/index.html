@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://chendinghao.github.io/2017/02/28/在hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="Chen">
 <meta property="og:description" content="心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。">
-<meta property="og:updated_time" content="2017-03-01T13:25:07.812Z">
+<meta property="og:updated_time" content="2017-03-01T13:41:58.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在hexo搭建个人博客">
 <meta name="twitter:description" content="心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。">
@@ -361,32 +361,12 @@
       
 
       
-        <p>　　心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人<br>博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。<br><a id="more"></a><br>　　首先是环境配置<br>        １、安装NODE<br>            安装NODE需要npm。而怎么安装npm呢？ 可以百度、geogle，这里就不在赘述。<br>        ２、安装git<br>            可以sudo apt-get install git<br>        ３、申请github<br>            这个没什么好说的</p>
-<pre><code>接下来就是安装hexo了
-    可以使用以下命令： sudo npm install hexo -g 即可
-
-接下来，进入博客所在的目录
-    hexo init
-    hexo generate
-    然后 hexo server　
-    最后一步是启动本地服务，进行文章预览调试：浏览器中输入http://localhost:4000
-
-下一步，配置github
-    (1)建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法 然后建立关联
-    (2)修改_congif.yml文件
-        在终端的博客存储位置中，输入 vim 修改_congif
-        拉到最后，修改如下
-        deploy:
-            type: git
-            repository: https://github.com/leopardpan/leopardpan.github.io.git 
-            branch: master
-        (ps.上面的repository后面，如果像上文一样，则以后每一次更新文章的时候，都要输入
-        github的账号密码，让人很不爽。怎么办呢？你也可以用ssh，这样就不用每次都输入密码啦。具体请百度)
-    (3)执行下面的命令部署git
-        npm install hexo-deploy-git --save
-    (4)再来一个hexo deploy
-
-到这里就完成了啊，就搭建好了一个简单的博客。当然，在这里只写到了比较理想化的情况，自己弄得时候要折腾多久
+        <p>　　心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人<br>博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。<br><a id="more"></a></p>
+<p>#首先是环境配置<br>    １、安装NODE<br>        安装NODE需要npm。而怎么安装npm呢？ 可以百度、geogle，这里就不在赘述。<br>    ２、安装git<br>        可以 ‘sudo apt-get install git’<br>    ３、申请github<br>        这个没什么好说的</p>
+<p>#接下来就是安装hexo了<br>    可以使用以下命令：<br>    ‘sudo npm install hexo -g’</p>
+<p>#接下来，进入博客所在的目录<br>    ‘hexo init’<br>    ‘hexo generate’<br>    然后 ‘hexo server’<br>    最后一步是启动本地服务，进行文章预览调试：浏览器中输入 (<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>)</p>
+<p>#下一步，配置github<br>    (1)建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法 然后建立关联<br>    (2)修改_congif.yml文件<br>        在终端的博客存储位置中，输入 vim 修改_congif<br>        拉到最后，修改如下<br>    deploy:<br>    type: git<br>    repository: (<a href="https://github.com/leopardpan/leopardpan.github.io.git" target="_blank" rel="external">https://github.com/leopardpan/leopardpan.github.io.git</a>)<br>        branch: master<br>            (ps.上面的repository后面，如果像上文一样，则以后每一次更新文章的时候，都要输入<br>            github的账号密码，让人很不爽。怎么办呢？你也可以用ssh，这样就不用每次都输入密码啦。具体请百度)<br>        (3)执行下面的命令部署git<br>            ‘npm install hexo-deploy-git –save’<br>        (4)再来一个hexo deploy</p>
+<pre><code>到这里就完成了啊，就搭建好了一个简单的博客。当然，在这里只写到了比较理想化的情况，自己弄得时候要折腾多久
 </code></pre><p>之后自己去干了之后才会知道。后文附上我自己做的时候遇到的坑吧。。</p>
 
       
