@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[linux的学习]]></title>
+      <url>%2F2017%2F03%2F15%2Flinux%E5%AD%A6%E4%B9%A0%2F</url>
+      <content type="text"><![CDATA[linux的学习是不可以缺少的！ 使用zip打包文件夹 123zip -r -q -o chen.zip /home/chendu -h chen.zipfile chen.zip 上述第一条命令 -r 表示打包包含子目录的全部内容 -q 参数表示为安静模式，即不向屏幕输出信息 -o 表示输出文件，后面紧跟打包输出的文件名]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[hello_my_blog]]></title>
       <url>%2F2017%2F02%2F28%2Fhello-my-blog%2F</url>
       <content type="text"><![CDATA[这是我的第一个个人博客，因为所学知识不多，所以暂时只能依靠hexo来搭建啦！现在还有很多不完善的地方，以后再花时间去折腾现在想着先把这两天折腾博客的坑记下来]]></content>
