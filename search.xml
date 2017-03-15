@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[linux的学习]]></title>
       <url>%2F2017%2F03%2F15%2Flinux%E5%AD%A6%E4%B9%A0%2F</url>
-      <content type="text"><![CDATA[linux的学习是不可以缺少的！ 使用zip打包文件夹 123zip -r -q -o chen.zip /home/chendu -h chen.zipfile chen.zip 上述第一条命令 -r 表示打包包含子目录的全部内容 -q 参数表示为安静模式，即不向屏幕输出信息 -o 表示输出文件，后面紧跟打包输出的文件名]]></content>
+      <content type="text"><![CDATA[linux的学习是不可以缺少的！ 使用zip打包文件夹 123zip -r -q -o chen.zip /home/chendu -h chen.zipfile chen.zip 上述第一条命令 -r 表示打包包含子目录的全部内容 -q 参数表示为安静模式，即不向屏幕输出信息 -o 表示输出文件，后面紧跟打包输出的文件名 zip： 打包 ：zip something.zip something （目录请加-r参数） 解包：unzip something 指定路径：-d 参数 tar： 打包：tar -zcvf something.tar something 解包：tar -zxvf something.tar 指定路径：-C 参数]]></content>
     </entry>
 
     
