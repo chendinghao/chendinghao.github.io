@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title></title>
+      <url>%2F2017%2F04%2F05%2F%E6%80%BB%E7%BB%93%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[实验楼，挑战：备份日志]]></title>
       <url>%2F2017%2F03%2F30%2F%E6%8C%91%E6%88%98%EF%BC%9A%E5%A4%87%E4%BB%BD%E6%97%A5%E5%BF%97%2F</url>
       <content type="text"><![CDATA[备份日志 小明是一个服务器管理员，他需要每天备份论坛数据（这里我们用日志替代），备份当天的日志并删除之前的日志。而且备份之后文件名是年-月-日的格式。alternatives.log在/var/log/下面。 目标 删除以前的备份每天凌晨3点定时备份alternatives.log到/home/shiyanlou/tmp/目录命名为年-月-日提示 datecrontabcp(备份)用一条命令写在crontab里面即可，不用写脚本注：如果fail没有任何提示信息，请刷新一下页面 121 crontab -e2 0 3 * * * rm -fr /home/shiyanlou/tmp &amp;&amp; mkdir -p /home/shiyanlou/tmp &amp;&amp; cp /var/log/alternatives.log /]]></content>
@@ -34,6 +41,13 @@
       <title><![CDATA[在hexo搭建个人博客]]></title>
       <url>%2F2017%2F02%2F28%2F%E5%9C%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
       <content type="text"><![CDATA[心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。 首先是环境配置１、安装NODE 安装NODE需要npm。而怎么安装npm呢？ 可以百度、geogle，这里就不在赘述。 ２、安装git 可以 `sudo apt-get install git` ３、申请github 这个没什么好说的 接下来就是安装hexo了可以使用以下命令： `sudo npm install hexo -g` 接下来，进入博客所在的目录`hexo init` `hexo generate` 然后 `hexo server` 最后一步是启动本地服务，进行文章预览调试：浏览器中输入 (http://localhost:4000) 下一步，配置github(1)建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法 然后建立关联 (2)修改_congif.yml文件 在终端的博客存储位置中，输入 vim 修改_congif 拉到最后，修改如下 1234deploy:type: gitrepository: (https://github.com/leopardpan/leopardpan.github.io.git) branch: master (ps.上面的repository后面，如果像上文一样，则以后每一次更新文章的时候，都要输入 github的账号密码，让人很不爽。怎么办呢？你也可以用ssh，这样就不用每次都输入密码啦。具体请百度) (3)执行下面的命令部署git `npm install hexo-deploy-git --save` (4)再来一个hexo deploy 到这里就完成了啊，就搭建好了一个简单的博客。当然，在这里只写到了比较理想化的情况，自己弄得时候要折腾多久之后自己去干了之后才会知道。后文附上我自己做的时候遇到的坑吧。。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[linux下cut命令详解]]></title>
+      <url>%2F2017%2F01%2F01%2Fcut%20%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3%2F</url>
+      <content type="text"><![CDATA[cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析 语法格式： cut [-bn] [file] 或 cut [-c] [file] 或 cut [-df] [file] 必须指定-b -c 或者-f标志之一 主要参数-b 以字节位单位进行分割。这些字节位置将忽略多字节字符边界，除非也指定了 -n标志-c 以字符位单位进行分割 cut 命令主要接受三个定位方法： 字节(bytes), 用选项 -b 字符(characters), 用选项 -c 域(fields),用选项-f值得注意的是，-b-c-f 后面可以加一个数字，如cut -c 8- 的意思就是,按照字符分割，从第八个字符开始！]]></content>
     </entry>
 
     
