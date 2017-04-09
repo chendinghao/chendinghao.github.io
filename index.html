@@ -280,6 +280,138 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://chendinghao.github.io/2017/04/09/挑战：备份日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chendinghao        　">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/haha.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/09/挑战：备份日志/" itemprop="url">
+                  实验楼，挑战：备份日志
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-09T19:30:19+08:00">
+                2017-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/09/挑战：备份日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/09/挑战：备份日志/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>备份日志</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/09/挑战：备份日志/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://chendinghao.github.io/2017/04/09/linux下软件安装/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -303,7 +435,7 @@
               
                 
                 <a class="post-title-link" href="/2017/04/09/linux下软件安装/" itemprop="url">
-                  linux下cut命令详解
+                  Linux下软件安装
                 </a>
               
             
@@ -366,8 +498,7 @@
 
       
         
-          
-            <h1 id="Linux下软件安装"><a href="#Linux下软件安装" class="headerlink" title="Linux下软件安装"></a>Linux下软件安装</h1><hr>
+          <h1 id="Linux下软件安装"><a href="#Linux下软件安装" class="headerlink" title="Linux下软件安装"></a>Linux下软件安装</h1><hr>
 <p>linux平台下软件安装主要有以下三种方式：</p>
 <blockquote>
 <ul>
@@ -377,142 +508,13 @@
 <li>从源代码编译安装</li>
 </ul>
 </blockquote>
-<hr>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">工具 　　</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">install</td>
-<td style="text-align:center">其后加上软件包名，用于安装一个软件包</td>
-</tr>
-<tr>
-<td style="text-align:center">update</td>
-<td style="text-align:center">从软件源镜像服务器上下载/更新用于更新本地软件源的软件包列表</td>
-</tr>
-<tr>
-<td style="text-align:center">upgrade</td>
-<td style="text-align:center">升级本地可更新的全部软件包，但存在依赖问题时将不会升级，通常会在更新之前执行一次update</td>
-</tr>
-<tr>
-<td style="text-align:center">dist-upgrade</td>
-<td style="text-align:center">解决依赖关系并升级(存在一定危险性)</td>
-</tr>
-<tr>
-<td style="text-align:center">remove</td>
-<td style="text-align:center">移除已安装的软件包，包括与被移除软件包有依赖关系的软件包，但不包含软件包的配置文件</td>
-</tr>
-<tr>
-<td style="text-align:center">autoremove</td>
-<td style="text-align:center">移除之前被其他软件包依赖，但现在不再被使用的软件包</td>
-</tr>
-<tr>
-<td style="text-align:center">purge</td>
-<td style="text-align:center">与remove相同，但会完全移除软件包，包含其配置文件</td>
-</tr>
-<tr>
-<td style="text-align:center">clean</td>
-<td style="text-align:center">移除下载到本地的已经安装的软件包，默认保存在/var/cache/apt/archives/</td>
-</tr>
-<tr>
-<td style="text-align:center">autoclean</td>
-<td style="text-align:center">移除已安装的软件的旧版本软件包</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">-y</td>
-<td style="text-align:center">自动回应是否安装软件包的选项，在一些自动化安装脚本中使用这个参数将十分有用</td>
-</tr>
-<tr>
-<td style="text-align:center">-s</td>
-<td style="text-align:center">模拟安装</td>
-</tr>
-<tr>
-<td style="text-align:center">-q</td>
-<td style="text-align:center">静默安装方式，指定多个q或者-q=#,#表示数字，用于设定静默级别，这在你不想要在安装软件包时屏幕输出过多时很有用</td>
-</tr>
-<tr>
-<td style="text-align:center">-f</td>
-<td style="text-align:center">修复损坏的依赖关系</td>
-</tr>
-<tr>
-<td style="text-align:center">-d</td>
-<td style="text-align:center">只下载不安装</td>
-</tr>
-<tr>
-<td style="text-align:center">–reinstall</td>
-<td style="text-align:center">重新安装已经安装但可能存在问题的软件包</td>
-</tr>
-<tr>
-<td style="text-align:center">–install-suggests</td>
-<td style="text-align:center">同时安装APT给出的建议安装的软件包</td>
-</tr>
-</tbody>
-</table>
-<h2 id="使用APT"><a href="#使用APT" class="headerlink" title="使用APT"></a>使用APT</h2><ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-</ul>
-<h2 id="使用dpkg"><a href="#使用dpkg" class="headerlink" title="使用dpkg"></a>使用dpkg</h2><blockquote>
-<p>dpkg是debian的软件包管理器基础，与prm十分相似，同样被用于安装、卸载、供给.deb软件包相关基础</p>
-<p>dpkg 本身是一个底层的工具。上层的工具，像是 APT，被用于从远程获取软件包以及处理复杂的软件包关系。”dpkg”是”Debian Package”的简写。</p>
-</blockquote>
-<p>dpkg常用参数介绍：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">-i</td>
-<td style="text-align:center">安装指定deb包</td>
-</tr>
-<tr>
-<td style="text-align:center">-R</td>
-<td style="text-align:center">后面加上目录名，用于安装该目录下的所有deb安装包</td>
-</tr>
-<tr>
-<td style="text-align:center">-r</td>
-<td style="text-align:center">remove，移除某个已安装的软件包</td>
-</tr>
-<tr>
-<td style="text-align:center">-I</td>
-<td style="text-align:center">显示deb包文件的信息</td>
-</tr>
-<tr>
-<td style="text-align:center">-s</td>
-<td style="text-align:center">显示已安装软件的信息</td>
-</tr>
-<tr>
-<td style="text-align:center">-S</td>
-<td style="text-align:center">搜索已安装的软件包</td>
-</tr>
-<tr>
-<td style="text-align:center">-L</td>
-<td style="text-align:center">显示已安装软件包的目录信息</td>
-</tr>
-</tbody>
-</table>
-<p><strong>详细细节</strong>，请参看<a href="https://www.shiyanlou.com/courses/1/labs/356/document" target="_blank" rel="external">实验楼</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/09/linux下软件安装/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -764,23 +766,14 @@
 
       
         
-          
-            <p>cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析</p>
-<ul>
-<li>语法格式：　cut  [-bn] [file] 或 cut [-c] [file]  或  cut [-df] [file]</li>
-<li>必须指定-b -c 或者-f标志之一</li>
-<li><p>主要参数<br>-b  以字节位单位进行分割。这些字节位置将忽略多字节字符边界，除非也指定了　-n标志<br>-c  以字符位单位进行分割</p>
-</li>
-<li><p>cut　命令主要接受三个定位方法：</p>
-<ul>
-<li>字节(bytes), 用选项　-b</li>
-<li>字符(characters), 用选项　-c</li>
-<li>域(fields),用选项-f<br>值得注意的是，-b-c-f　后面可以加一个数字，如cut -c 8-　的意思就是,按照字符分割，从第八个字符开始！</li>
-</ul>
-</li>
-</ul>
-
-          
+          <p>cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/07/cut 命令详解/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -907,138 +900,6 @@
         
           
             
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://chendinghao.github.io/2017/03/30/挑战：备份日志/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="chendinghao        　">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/haha.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/30/挑战：备份日志/" itemprop="url">
-                  实验楼，挑战：备份日志
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-30T19:19:08+08:00">
-                2017-03-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/30/挑战：备份日志/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/30/挑战：备份日志/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>备份日志</p>
-<p>小明是一个服务器管理员，他需要每天备份论坛数据（这里我们用日志替代），备份当天的日志并删除之前的日志。而且备份之后文件名是年-月-日的格式。alternatives.log在/var/log/下面。</p>
-<p>目标</p>
-<p>删除以前的备份<br>每天凌晨3点定时备份alternatives.log到/home/shiyanlou/tmp/目录<br>命名为年-月-日<br>提示</p>
-<p>date<br>crontab<br>cp(备份)<br>用一条命令写在crontab里面即可，不用写脚本<br>注：如果fail没有任何提示信息，请刷新一下页面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1  crontab -e</div><div class="line">2  0 3 * * * rm -fr /home/shiyanlou/tmp &amp;&amp; mkdir -p /home/shiyanlou/tmp &amp;&amp; cp /var/log/alternatives.log /</div></pre></td></tr></table></figure>
           
         
       
@@ -1296,7 +1157,7 @@
 
       
         
-          <p>这是我的第一个个人博客，因为所学知识不多，所以暂时只能依靠hexo来搭建啦！<br>现在还有很多不完善的地方，以后再花时间去折腾<br>
+          <p>这是我的第一个个人博客.</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/02/28/hello-my-blog/#more" rel="contents">
@@ -1564,7 +1425,7 @@
 
       
         
-          <p>　　心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人<br>博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。<br>
+          <p>　　心血来潮想做一个自己的博客来记录生活，以及把想记录的东西都有一个地方可以记录下来，于是就有了这样的一个个人<br>博客，域名目前用着github的。我的hexo版本是3.2.2。我是在linux下进行开发的。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/02/28/在hexo搭建个人博客/#more" rel="contents">
