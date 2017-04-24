@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title></title>
+      <url>%2F2017%2F04%2F24%2F%23%20VIM-Adventures%20%E5%89%8D%E4%B8%89%E5%85%B3%E6%94%BB%E7%95%A5%2F</url>
+      <content type="text"><![CDATA[VIM-Adventures 前三关攻略 传送门：https://vim-adventures.com/VIM-Adventures免费的有三关，从第四关开始要$25，不过前三关还是很好玩的，也能对一些常用的ＶＩＭ的键有所熟悉 第一关： 相当简单，只是用hjkl键控制上下左右而已 h 左 j下 k上 l右 第二关： 主要使用vim的光标记忆操作。主要就是在上一行光标所在位置，到下一行 也是同样的位置，如果下一行比较光标将停留在其末尾。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[实验楼，挑战：备份日志]]></title>
       <url>%2F2017%2F04%2F09%2F%E6%8C%91%E6%88%98%EF%BC%9A%E5%A4%87%E4%BB%BD%E6%97%A5%E5%BF%97%2F</url>
       <content type="text"><![CDATA[备份日志 小明是一个服务器管理员，他需要每天备份论坛数据（这里我们用日志替代），备份当天的日志并删除之前的日志。而且备份之后文件名是年-月-日的格式。alternatives.log在/var/log/下面。 目标 删除以前的备份每天凌晨3点定时备份alternatives.log到/home/shiyanlou/tmp/目录命名为年-月-日提示 datecrontabcp(备份)用一条命令写在crontab里面即可，不用写脚本注：如果fail没有任何提示信息，请刷新一下页面 121 crontab -e2 0 3 * * * rm -fr /home/shiyanlou/tmp &amp;&amp; mkdir -p /home/shiyanlou/tmp &amp;&amp; cp /var/log/alternatives.log /]]></content>
