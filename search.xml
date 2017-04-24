@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title></title>
+      <title><![CDATA[VIM-Adventures前三关攻略]]></title>
       <url>%2F2017%2F04%2F24%2F%23%20VIM-Adventures%20%E5%89%8D%E4%B8%89%E5%85%B3%E6%94%BB%E7%95%A5%2F</url>
       <content type="text"><![CDATA[VIM-Adventures 前三关攻略 传送门：https://vim-adventures.com/VIM-Adventures免费的有三关，从第四关开始要$25，不过前三关还是很好玩的，也能对一些常用的ＶＩＭ的键有所熟悉 第一关： 相当简单，只是用hjkl键控制上下左右而已 h 左 j下 k上 l右 第二关： 主要使用vim的光标记忆操作。主要就是在上一行光标所在位置，到下一行 也是同样的位置，如果下一行比较光标将停留在其末尾。]]></content>
     </entry>
