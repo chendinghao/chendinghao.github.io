@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="学习," />
+  <meta name="keywords" content="学习,“linux”," />
 
 
 
@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="这是我的第一个个人博客.">
+<meta name="description" content="cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello_my_blog">
-<meta property="og:url" content="https://chendinghao.github.io/2017/02/28/hello-my-blog/index.html">
+<meta property="og:title" content="linux下cut命令详解">
+<meta property="og:url" content="https://chendinghao.github.io/2017/04/25/cut 命令详解/index.html">
 <meta property="og:site_name" content="Chen">
-<meta property="og:description" content="这是我的第一个个人博客.">
-<meta property="og:updated_time" content="2017-04-09T11:30:57.858Z">
+<meta property="og:description" content="cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析">
+<meta property="og:updated_time" content="2017-04-25T05:06:07.402Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello_my_blog">
-<meta name="twitter:description" content="这是我的第一个个人博客.">
+<meta name="twitter:title" content="linux下cut命令详解">
+<meta name="twitter:description" content="cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析">
 
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://chendinghao.github.io/2017/02/28/hello-my-blog/"/>
+  <link rel="canonical" href="https://chendinghao.github.io/2017/04/25/cut 命令详解/"/>
 
 
 
 
 
-  <title> hello_my_blog | Chen </title>
+  <title> linux下cut命令详解 | Chen </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +279,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://chendinghao.github.io/2017/02/28/hello-my-blog/">
+    <link itemprop="mainEntityOfPage" href="https://chendinghao.github.io/2017/04/25/cut 命令详解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chendinghao        　">
@@ -300,7 +300,7 @@
             
             
               
-                hello_my_blog
+                linux下cut命令详解
               
             
           </h1>
@@ -315,8 +315,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-28T14:42:53+08:00">
-                2017-02-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-25T13:06:07+08:00">
+                2017-04-25
               </time>
             
 
@@ -334,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/28/hello-my-blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/28/hello-my-blog/" itemprop="commentCount"></span>
+                <a href="/2017/04/25/cut 命令详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/25/cut 命令详解/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,9 +361,21 @@
       
 
       
-        <p>这是我的第一个个人博客.</p>
+        <p>cut是一个选取命令，就是将一段数据经过分析，取出指定的数据。值得注意的是，cut是针对“行”进行分析的，而不是像数据挖掘那样进行对数据的分析</p>
 <a id="more"></a>
-<p>因为所学知识不多，所以暂时只能依靠hexo来搭建啦！<br>现在还有很多不完善的地方，以后再花时间去折腾<br><!--more--><br>现在想着先把这两天折腾博客的坑记下来</p>
+<ul>
+<li>语法格式：　cut  [-bn] [file] 或 cut [-c] [file]  或  cut [-df] [file]</li>
+<li>必须指定-b -c 或者-f标志之一</li>
+<li><p>主要参数<br>-b  以字节位单位进行分割。这些字节位置将忽略多字节字符边界，除非也指定了　-n标志<br>-c  以字符位单位进行分割</p>
+</li>
+<li><p>cut　命令主要接受三个定位方法：</p>
+<ul>
+<li>字节(bytes), 用选项　-b</li>
+<li>字符(characters), 用选项　-c</li>
+<li>域(fields),用选项-f<br>值得注意的是，-b-c-f　后面可以加一个数字，如cut -c 8-　的意思就是,按照字符分割，从第八个字符开始！</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -389,6 +401,8 @@
           
             <a href="/tags/学习/" rel="tag"># 学习</a>
           
+            <a href="/tags/“linux”/" rel="tag"># “linux”</a>
+          
         </div>
       
 
@@ -400,8 +414,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/28/关于正则表达式/" rel="next" title="关于  '<a[^>]+href=["\'](.*?)["\']'  的解释">
-                <i class="fa fa-chevron-left"></i> 关于  '<a[^>]+href=["\'](.*?)["\']'  的解释
+              <a href="/2017/04/25/挑战：备份日志/" rel="next" title="实验楼，挑战：备份日志">
+                <i class="fa fa-chevron-left"></i> 实验楼，挑战：备份日志
               </a>
             
           </div>
@@ -410,8 +424,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/15/linux学习/" rel="prev" title="linux的学习">
-                linux的学习 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/25/# VIM-Adventures 前三关攻略/" rel="prev" title="VIM-Adventures前三关攻略">
+                VIM-Adventures前三关攻略 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -427,10 +441,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2017/02/28/hello-my-blog/"
-     data-title="hello_my_blog"
+        <div class="ds-share flat" data-thread-key="2017/04/25/cut 命令详解/"
+     data-title="linux下cut命令详解"
      data-content=""
-     data-url="https://chendinghao.github.io/2017/02/28/hello-my-blog/">
+     data-url="https://chendinghao.github.io/2017/04/25/cut 命令详解/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
